@@ -1,0 +1,50 @@
+body{
+    font-family:Calibri, sans-serif;
+    background-color: #e0faf0;
+}
+
+h1, h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2{
+    margin: -10px -10px 10px -10px;
+    padding: 10px;
+    background-color: #0c6c4e;
+    color: white;
+    border-radius: 10px;
+}
+
+form{
+    display:flex;
+    width: 700px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.column{
+    width: 320px;
+    display:inline-flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+label{
+    padding-top: 20px;
+}
+
+#result{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(246, 208, 71);
+    margin: auto;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+}
