@@ -37,21 +37,26 @@
 
     <script>
         function generateCss(){
+            //Взяли значения полей формы
             let topLeft = document.getElementById('topLeft').value
             let topRight = document.getElementById('topRight').value
             let bottomLeft = document.getElementById('bottomLeft').value
             let bottomRight = document.getElementById('bottomRight').value
 
+            //Взяли html элементы, в которые будут помещены результаты
             let result = document.getElementById('result')
             let textarea = document.getElementById('cssCode')
 
+            //Вычислили результат
             textarea.value = `border-top-left-radius: ${topLeft}px;\nborder-top-right-radius: ${topRight}px;\nborder-bottom-left-radius: ${bottomLeft}px;\nborder-bottom-right-radius: ${bottomRight}px;`
+            //Добавили нужные стили элементу
             result.style.borderTopLeftRadius = topLeft + 'px'
             result.style.borderTopRightRadius = topRight + 'px'
             result.style.borderBottomLeftRadius = bottomLeft + 'px'
             result.style.borderBottomRightRadius = bottomRight + 'px'
         }
 
+        //Функция будет вызываться каждый раз при изменении данных в полях
         for (let item of document.querySelectorAll('input')){
             item.addEventListener('input', generateCss)
         }
